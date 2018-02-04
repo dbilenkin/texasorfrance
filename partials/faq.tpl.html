@@ -1,0 +1,17 @@
+<div class="" id="faq">
+	<div class="page-header">
+		<h3 id="whats-included">What's the deal with the scoring?</h3>
+	</div>
+	<p>
+		There is a difficulty and a streak multiplier. </br>
+		The difficulty multiplier is based on the ratio of the areas and the overall sizes of the countries. Larger countries are easier than smaller ones. </br>
+		<pre>this.difficultyMultiplier = Math.ceil((20 - Math.log(largerArea))/Math.sqrt(ratio))</pre>					
+	    	The streak multiplier increases with every answer you get right and decreases with every answer you get wrong. </br>
+ 		<pre>var streakMultiplier = Math.floor(this.streakMultiplierStart * Math.pow(1.2,this.streak));</pre>
+	</p>
+	<div class="page-header">
+		<h3 id="whats-included">Why are there only 2 questions in the FAQ?</h3>
+	</div>
+	<p>
+		Because I just started this, but I know the score is a bit of a mystery so I figured I'd add that.
+</div>

@@ -1,0 +1,95 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  overflow: auto;
+  height: 100%;
+}
+
+.vertical-container, .tab-content, .tab-pane, .contentArea {
+	height: 100%;
+}
+
+.vertical-container {
+	display: table;
+	width: 100%;
+	overflow: auto !important;
+}
+
+.vertical-middle {
+	display:table-cell;
+	vertical-align: middle;
+}
+.theme-dropdown .dropdown-menu {
+  display: block;
+  position: static;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.correct {
+	color: green;
+}
+
+.wrong {
+	color: red;
+}
+
+/* CUSTOM FONTS */
+@font-face {
+	font-family: "texas";
+	src: url('../fonts/edmunds.ttf');
+}
+
+@font-face {
+	font-family: "france";
+	src: url('../fonts/KGLesBouquinistesdeParis.ttf');
+}
+
+@font-face {
+	font-family: "score";
+	src: url('../fonts/SF Digital Readout Medium.ttf');
+}
+
+
+.navbar-brand {
+	font-size: 28px;
+	color: #ffffff !important;
+	padding: 12px 10px 0px 10px;
+}
+
+.navbar-inverse * label {
+	color: #ffffff;
+}
+
+
+#texas {
+	font-family: "texas";
+	color: #BB133E;
+}
+
+#france {
+	font-family: "france";
+	color: #0055A4;
+}
+
+#score {
+	font-family: "score";
+	font-size: 40px;
+	color: #ffffff;
+	padding-right: 10px;
+}
+
+#playerNameError .help-block {
+	color: #b94a48;
+}

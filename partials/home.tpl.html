@@ -1,0 +1,83 @@
+<div class="vertical-container" id="home">
+	<div class="contentArea" id="startArea">
+		<div class="container text-center vertical-container">
+			<div class="row-fluid vertical-middle">
+				<p>
+					<button id="#start-states" type="button" class="btn btn-success btn-lg">
+						States
+					</button>
+				</p>
+				<p>
+					<button id="#start-statesVsCountries" type="button" class="btn btn-success btn-lg">
+						States vs. Countries
+					</button>
+				</p>
+				<p>
+					<button id="#start-countries" type="button" class="btn btn-success btn-lg">
+						Countries
+					</button>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="contentArea" id="questionArea" style="display: none" class="row-fluid">
+		<div class="col-xs-12 col-lg-12">
+			<h3 id="questionLabel" class="text-center"></h3>
+		</div>
+		<div id="item1div" class="col-xs-6 text-center" style="left: -1000px">
+			<button type="button" id="item1" class="btn btn-primary btn-lg btn-block" onclick="Round1.checkAnswer(1)"></button>
+		</div>
+		<div id="item2div" class="col-xs-6 text-center" style="right: -1000px">
+			<button type="button" id="item2" class="btn btn-primary btn-lg btn-block" onclick="Round1.checkAnswer(2)"></button>
+		</div>
+		<div class="col-xs-12 text-center correct" id="correct" style="display: none">
+			<span id="correctScore"></span>
+		</div>
+		<div class="col-xs-12 text-center wrong" id="wrong" style="display: none">
+			<span id="wrongScore"></span>
+		</div>
+	</div>
+
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+	<div class="container">
+		<div id="progressBarContainer" class="progress progress-striped active" style="display: none">
+			<div id="progressBar" class="progress-bar progress-bar-success"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+		</div>
+	</div>
+</nav>
+
+<div class="modal fade" id="results" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title">Results</h4>
+			</div>
+			<div class="modal-body">
+				<h3 class="correct"><span id="correctResult"></span> Correct</h3>
+				<h3 class="wrong"><span id="wrongResult"></span> Wrong</h3>
+				<h3>Score: <span class="score"></span></h3>
+			</div>
+			<div class="modal-footer">
+				<form id="highscoreForm" class="form-inline" role="form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="inputName" placeholder="Enter name" name="playerName" required />
+					</div>
+					<button id="submitScore" type="submit" class="btn btn-primary">
+						Submit Score
+					</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">
+						Cancel
+					</button>
+					<div id="playerNameError"></div>
+				</form>
+
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
